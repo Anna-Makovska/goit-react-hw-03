@@ -1,6 +1,6 @@
 import Contact from "../Contact/Contact";
 import s from "../ContactList/ContactList.module.css"
-const ContactList = ({ icons, filter }) => {
+const ContactList = ({ icons, filter, onDelete}) => {
     return (
       <ul className={s.list}>
         {filter.map((contact) => (
@@ -9,6 +9,8 @@ const ContactList = ({ icons, filter }) => {
               name={contact.name}
               number={contact.number}
               icons={icons}
+              onDelete={onDelete}
+              id={contact.id}
             />
           </li>
         ))}

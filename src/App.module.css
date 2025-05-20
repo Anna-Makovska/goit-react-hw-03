@@ -1,6 +1,27 @@
-.header {
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #c1f7d5, #ffe1b3, #fcd5ce);
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #ffffffcc;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .header {
+    font-size: 36px;
+    font-weight: bold;
     text-align: center;
-    font-size: 40px;
-}
+    margin-bottom: 30px;
+    color: #3a4a86;
+  }

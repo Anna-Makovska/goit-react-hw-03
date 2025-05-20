@@ -1,37 +1,36 @@
-.mainBox {
-    border: black 1px solid;
-    padding: 8px;
-    display: flex;
-    gap: 20px;
-    width: 300px;
-    justify-content: space-between;
-    border-radius: 8px;
-}
-.submainBox {
-    display: flex;
-    flex-direction: column;
 
-}
-.wrapper {
-    margin-bottom: 8px;
-    
-}
-.icon {
-    margin-right: 8px;
-}
-.name,
-.number {
-    font-size: 18px;
-}
-.contactButton {
-    border-radius: 8px;
-    background-color: transparent;
-    border: 1px solid blue;
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
+.mainBox {
     display: flex;
+    justify-content: space-between;
+    gap: 40px;
     align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
+    padding: 12px 20px;
+    background-color: #f5f7ff;
+    border: 1px solid #ccd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+    width: 360px;
+    height: 80px;
+  }
+  
+  .name, .number {
+    font-size: 18px;
+  }
+  
+  .contactButton {
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contactButton:hover {
+    background: #e04444;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }

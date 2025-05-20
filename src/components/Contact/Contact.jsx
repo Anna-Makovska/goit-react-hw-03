@@ -1,5 +1,5 @@
 import s from "../Contact/Contact.module.css"
-const Contact = ({ name, number, icons }) => 
+const Contact = ({ name, number, icons, onDelete, id }) => 
 {
     return (
         
@@ -15,7 +15,7 @@ const Contact = ({ name, number, icons }) =>
           </div>
         </div>
 
-        <button className={s.contactButton}>Delete</button>
+        <button onClick={() => onDelete(id)} className={s.contactButton}>Delete</button>
       </div>
     );
 }
