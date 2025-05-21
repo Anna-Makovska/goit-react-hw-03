@@ -1,13 +1,21 @@
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #c1f7d5, #ffe1b3, #fcd5ce);
-    min-height: 100vh;
-    color: #333;
+  background: linear-gradient(135deg, #d0f5ce, #8fd694, #4b8e60);
+  background-size: 400% 400%;
+  animation: greenMagic 20s ease infinite;
+}
+
+@keyframes greenMagic {
+  0% {
+    background-position: 0% 50%;
   }
-  
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
   .container {
     max-width: 600px;
     margin: 0 auto;
@@ -19,9 +27,10 @@ body {
   }
   
   .header {
-    font-size: 36px;
-    font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
-    color: #3a4a86;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
   }
